@@ -15,7 +15,7 @@ appHeight();
 // end height
 
 // start scroll
-scroll = new LocomotiveScroll({el: document.querySelector('[data-scroll-container]'),smooth:true,getDirection: true,scrollFromAnywhere: true,breakpoint: 0,inertia: 1.5,mobile: {breakpoint: 0,smooth: true,inertia: 1.5,},tablet: {breakpoint: 0,smooth: true,inertia: 1.5,},smartphone: {breakpoint: 0,smooth: true,inertia: 1.5,}})
+scroll = new LocomotiveScroll({el: document.querySelector('[data-scroll-container]'),smooth:true,getDirection: true,scrollFromAnywhere: true,breakpoint: 0,inertia: 15,mobile: {breakpoint: 0,smooth: true,inertia: 15,},tablet: {breakpoint: 0,smooth: true,inertia: 15,},smartphone: {breakpoint: 0,smooth: true,inertia: 15,}})
 // scroll = new LocomotiveScroll({el: document.querySelector('[data-scroll-container]'),smooth: true,getDirection: true,scrollFromAnywhere: true,breakpoint: 0,inertia: 0,tablet: {breakpoint: 0,smooth: false,inertia: 0,}})
 new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"));
 
