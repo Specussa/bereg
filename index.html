@@ -32,7 +32,7 @@
       <div class="cursor__right"></div>
     </div>
   </div>
-  <header class="header">
+  <header class="header header__transparent">
     <div class="header__progress">
       <div class="header__progress_bar"></div>
     </div>
@@ -50,7 +50,7 @@
             <path d="M6.53622 15.169C7.0181 15.092 9.52134 16.5297 11.6195 17.1673C13.7176 17.8048 14.5321 18.0573 16.4468 17.7492C17.6925 17.4785 18.8123 16.7978 19.6281 15.8151C19.6281 15.8151 18.4938 21.0525 17.9522 21.3349C16.7217 21.8704 15.3957 22.1499 14.0545 22.1565C12.4989 22.0526 10.9649 21.7344 9.49575 21.2109C8.46802 20.8471 5.6023 19.7945 5.23129 19.465C4.86029 19.1356 6.0586 15.246 6.53622 15.169Z" fill="currentColor"/>
           </svg>
         </a>
-        <button class="header__city">
+        <button class="header__city body_caption">
           Санкт-Петербург
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
             <path d="M3.1665 4L6.19759 0.25H0.135415L3.1665 4Z" fill="currentColor"/>
@@ -60,24 +60,23 @@
           <nav class="header__nav">
             <ul class="header__nav_list">
               <li class="header__nav_item">
-                <a href="#" class="header__nav_link sub_caption">
-                  Покупка
-                </a>
-                <a href="#" class="header__nav_link sub_caption">
-                  Аренда
-                </a>
-                <a href="#" class="header__nav_link sub_caption">
-                  Строительство
-                </a>
-                <a href="#" class="header__nav_link sub_caption">
-                  Отзывы
-                </a>
+                <a href="#" class="header__nav_link body_caption">Покупка</a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#" class="header__nav_link body_caption">Аренда</a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#" class="header__nav_link body_caption">Строительство</a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#" class="header__nav_link body_caption">Отзывы</a>
               </li>
             </ul>
           </nav>
         </div>
-        <a href="tel://+79215547050" class="header__tel">+7 921 554 70-50</a>
+        <a href="tel://+79215547050" class="header__tel body_caption">+7 921 554 70-50</a>
         <button class="header__burger" aria-label="Открыть меню">
+          <span class="body_caption">Меню</span>
           <div class="header__burger_flex">
             <span></span>
             <span></span>
@@ -88,8 +87,10 @@
     </div>
   </header>
   <main class="main" data-scroll-container>
-    <!-- <section class="top" data-scroll-section id="top"><div class="main__border"></div></section> -->
+    <div class="border border__main"></div>
+    <!-- <section class="top" data-scroll-section id="top"><div class="border"></div></section> -->
     <section class="hero" data-scroll-section>
+      <div class="border border__gray border__main"></div>
       <div class="hero__image">
         <img src="img/main.webp" alt="">
       </div>
@@ -101,6 +102,175 @@
             Lorem ipsum dolor sit amet consectetur. Enim at ultricies donec id. 
             Lorem ipsum dolor sit amet consectetur. Enim at ultricies donec id.
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="employees" data-scroll-section>
+      <div class="border"></div>
+      <div class="container employees__container">
+        <div class="employees__flex">
+          <div class="employees__info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="65" viewBox="0 0 44 65" fill="none">
+              <rect y="1.05957" width="28.5" height="28.5" transform="matrix(0.707832 0.706381 -0.707832 0.706381 22.75 22.3902)" stroke="#DBD7CC" stroke-width="1.5"/>
+              <path d="M22.0635 46.8293L26.3936 39.3293L17.7334 39.3293L22.0635 46.8293ZM21.3135 3.27163e-08L21.3135 40.0793L22.8135 40.0793L22.8135 -3.27163e-08L21.3135 3.27163e-08Z" fill="#313233"/>
+            </svg>
+            <p class="employees__desc">Lorem ipsum dolor sit amet consectetur. Enim at ultricies donec id. Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="employees__slider">
+            <div class="employees__top">
+              <p class="employees__head sub_one">Сотрудники месяца</p>
+              <div class="swiper__navigation employees__navigation">
+                <div class="swiper-button-prev employees__prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="10" viewBox="0 0 21 10" fill="none">
+                    <path d="M0 5L7.5 0.669873V9.33013L0 5ZM21 5.75L6.75 5.75V4.25L21 4.25V5.75Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-next employees__next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="10" viewBox="0 0 21 10" fill="none">
+                    <path d="M21 5L13.5 0.669873V9.33013L21 5ZM0 5.75L14.25 5.75V4.25L0 4.25L0 5.75Z" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="employees__swiper swiper">
+              <ul class="employees__list swiper-wrapper">
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_1.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_2.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_3.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_4.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_1.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_2.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_3.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+                <li class="employees__item swiper-slide">
+                  <div class="employees__image">
+                    <img src="img/employees/employees_4.webp" alt="">
+                  </div>
+                  <p class="employees__name">Васильев В.В.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about_company" data-scroll-section>
+      <div class="border"></div>
+      <div class="container about_company__container">
+        <div class="about_company__block">
+          <h2 class="about_company__head">О компании</h2>
+          <ul class="about_company__list">
+            <li class="about_company__item">
+              <a href="#" class="about_company__link">
+                <h4 class="about_company__heading">Гарантия безопасности сделок</h4>
+                <p class="about_company__desc sub_two">
+                  Lorem ipsum dolor sit amet consectetur. 
+                  Enim at ultricies donec id. Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <p class="about_company__links body_caption">Подробнее</p>
+                <div class="about_company__image">
+                  <img src="img/about/about_company.webp" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="about_company__item">
+              <a href="#" class="about_company__link">
+                <h4 class="about_company__heading">Кейсы</h4>
+                <p class="about_company__desc sub_two">
+                  Удивительные истории продаж и покупки наших клиентов. 
+                  Enim at ultricies donec id. Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <p class="about_company__links body_caption">Подробнее</p>
+                <div class="about_company__image">
+                  <img src="img/about/about_company.webp" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="about_company__item">
+              <a href="#" class="about_company__link">
+                <h4 class="about_company__heading">Отзывы</h4>
+                <p class="about_company__desc sub_two">
+                  Отзывы о нашей работе и взаимодействии с клиентами. 
+                  Enim at ultricies donec id.
+                </p>
+                <p class="about_company__links body_caption">Подробнее</p>
+                <div class="about_company__image">
+                  <img src="img/about/about_company.webp" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="about_company__item">
+              <a href="#" class="about_company__link">
+                <h4 class="about_company__heading">Строительство</h4>
+                <p class="about_company__desc sub_two">
+                  Построим дом мечты под индивидуальный или готовый проект. 
+                  Enim at ultricies donec id. 
+                </p>
+                <p class="about_company__links body_caption">Подробнее</p>
+                <div class="about_company__image">
+                  <img src="img/about/about_company.webp" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="about_company__item">
+              <a href="#" class="about_company__link">
+                <h4 class="about_company__heading">Услуги</h4>
+                <p class="about_company__desc sub_two">
+                  С нами можно купить, продать, арендовать или сдать собственную недвижимость. 
+                </p>
+                <p class="about_company__links body_caption">Подробнее</p>
+                <div class="about_company__image">
+                  <img src="img/about/about_company.webp" alt="">
+                </div>
+              </a>
+            </li>
+            <li class="about_company__item">
+              <a href="#" class="about_company__link">
+                <h4 class="about_company__heading">Вам нужна недвижимость?</h4>
+                <p class="about_company__desc sub_two">
+                  Напишите нам и мы поможем подобрать вам подходящий вариант.
+                </p>
+                <p class="about_company__links body_caption">Отправить заявку</p>
+                <div class="about_company__image">
+                  <img src="img/about/about_company.webp" alt="">
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
