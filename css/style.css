@@ -1545,6 +1545,16 @@ html.has-scroll-dragging {
   height: 200px;
 }
 
+.employees__name {
+  padding: 0 0 35px;
+  -webkit-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+}
+
+.swiper-slide-active .employees__name {
+  padding: 0;
+}
+
 .employees__image img {
   width: 100%;
   height: 100%;
