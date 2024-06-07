@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelectorAll('button');
   const label = document.querySelectorAll('label');
   const hslanguageicon = document.querySelectorAll('.header__set_language_icon');
-  const cursorgrab = document.querySelectorAll('.c-scrollbar_thumb');
   const buttonnext = document.querySelectorAll('.swiper-button-next');
   const buttonprev = document.querySelectorAll('.swiper-button-prev');
   const sliders = document.querySelectorAll(".swiper-wrapper");
@@ -167,15 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   label.forEach(item => {
-    item.addEventListener('mouseover', () => {
-      cursor.classList.add('hover');
-    });
-    item.addEventListener('mouseleave', () => {
-      cursor.classList.remove('hover');
-    });
-  })
-
-  cursorgrab.forEach(item => {
     item.addEventListener('mouseover', () => {
       cursor.classList.add('hover');
     });

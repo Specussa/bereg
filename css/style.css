@@ -707,8 +707,9 @@ html.has-scroll-dragging {
 }
 
 .has-scroll-dragging .c-scrollbar_thumb {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
+  /* cursor: -webkit-grabbing;
+  cursor: grabbing; */
+  cursor: none;
 }
 
 [data-scroll-direction=horizontal] .c-scrollbar_thumb {
@@ -1014,7 +1015,6 @@ html.has-scroll-dragging {
   background-color: var(--color);
 }
 
-[data-scroll-section],
 .swiper-wrapper,
 .swiper-container-3d .swiper-cube-shadow,
 .swiper-container-3d .swiper-slide,
